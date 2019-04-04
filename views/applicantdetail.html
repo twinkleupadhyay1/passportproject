@@ -1,0 +1,745 @@
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+<html>
+<head>
+<div class="w3-container">
+<div class="w3-light-grey">
+  <div class="w3-black" style="height:24px;width:100%"><p id="demo"></p>
+
+<script>
+var d = new Date();
+document.getElementById("demo").innerHTML = d;
+</script>
+</div> 
+</div></div>
+<div align="center">
+  <% if(currentUser) { %>
+    <p>hello, <%= currentUser.First_Name %></p>
+  <% } %>
+  </div>
+
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.header img {
+  float: left;
+  width: 100px;
+  height: 120px;
+  background: #555;
+}
+
+.header h2 {
+  position: relative;
+  top: 0px;
+  left: 10px;
+}
+.header p {
+position: relative;
+top: 0px;
+left: 10px;
+
+}
+
+
+
+
+
+/* <div class="header">
+  <br><img src="ashokpillar.jpg" alt="logo"  width="50" height="290"/>
+<img src="airforce.png" alt="logo" style="float:right;" width="50" height="290"/>
+ <h2><big><b>Passport Seva</b></big></h2>
+<p><small>Consular,Passport & Visa Division<br>Ministry of External Affairs,Government of India</small></p><br>
+
+</div> */
+
+
+
+
+
+
+
+/* <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style> */
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #c14f4f;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #f48a55;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: #000000;
+  color: white;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #f48a55;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #d3903d;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+</style>
+</head>
+<body>
+
+        <div class="header">
+                <br><img src="/static/image/ashokpillar.jpg" alt="logo"  width="50" height="290"/>
+              <img src="/static/image/airforce.png" alt="logo" style="float:right;" width="50" height="290"/>
+               <h2><big><b>Passport Seva</b></big></h2>
+              <p><small>Consular,Passport & Visa Division<br>Ministry of External Affairs,Government of India</small></p><br>
+              
+              </div>
+
+ 
+<div class="topnav">
+  <a class="active" href="homenew.html">Home</a>
+<div class="dropdown">
+    <button class="dropbtn">About Us
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="cpv.html">CPV Division</a>
+      <a href="passportseva.html">Passport Seva</a>
+      
+    </div>
+  </div> 
+
+
+
+<div class="dropdown">
+    <button class="dropbtn">Passport Offices
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="p2.html">Passport Offices in India</a>
+      <a href="p4.html">Mission/Post Abroad</a>
+      
+    </div>
+  </div> 
+
+
+<div class="dropdown">
+    <button class="dropbtn">Consular Services
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="fnandres.html">Functions and Responsibilities</a>
+      <a href="grievances.html">Log and Track Grievances</a>
+      
+    </div>
+  </div>
+
+
+
+
+  <a href="visa.html">Visa Services</a>
+
+  
+<a href="RTI.html">RTI</a>
+
+
+<a href="citizencharter.html">Citizens' Chater</a>
+
+<div class="dropdown">
+    <button class="dropbtn">Contact Us
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+
+      <a href="gi.html"> General Information</a>
+<a href="chiefpassportoffice.html"> Chief Passport Officer</a>
+
+<a href="vigilanceunit.html"> Vigilance Unit</a>
+<a href="visaservice.html">Visa Services</a>
+      <a href="consularservice.html">Consular Services</a>
+    </div>
+  </div> 
+
+
+
+<a href="What'snew.html">What's New</a>
+
+<a href="/app/logout" class="f90-logout-button">Logout</a>
+
+
+</div>
+
+
+
+
+</body>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<body style="background:url(/static/image/gradient1.jpg); size:100% 100% ;background-repeat: no repeat">
+
+
+<marquee bgcolor=orange>POPSKs have been made operational in the Country.** New Tatkaal Scheme Launched. For details please refer The Gazette of India - G.S.R. 39(E) under <b>Latest  News </b>section on the portal.** No applicants would be serviced at PSK/POPSK without prior online appointment.** Please refer 'Passport Office Page' for more details.</marquee>
+
+
+<img src="/static/image/os.jpg" width="1400" height="450">
+   <h1 style="color:darkslateblue;text-align:center;">Applicant Details For Passport</h1>
+
+</body>
+</head>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.custom-select {
+margin-left:5px;
+
+
+  position: relative;
+  font-family: Arial;
+}
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+.select-selected {
+  background-color: DodgerBlue;
+}
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.icon {
+    padding: 10px;
+    background: dodgerblue;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+
+.input-field:focus {
+    border: 2px solid dodgerblue;
+}
+
+/* Set a style for the submit button */
+.btn {
+    background-color: dodgerblue;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+</style>
+</head>
+<body>
+
+
+
+
+
+
+
+<form action="/app/applicantdetail" method="post" style="max-width:500px;margin:auto;"   >
+
+ 
+ <!-- enctype="multipart/form-data" -->
+
+  
+  <br>
+  <div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" type="text" placeholder="First Name" name="FirstName">
+  </div>
+
+  <div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" type="text" placeholder="Last Name" name="LastName">
+  </div>
+  <div class="input-container">
+      <i class="fa fa-envelope icon"></i>
+     <input class="input-field" type="text" placeholder="email" name="email">
+    </div>
+  <h2>Gender</h1>
+<label class="container">Male
+  <input type="radio" checked="checked" name="gender" value="male">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Female
+  <input type="radio" name="gender" value="female">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Transgender
+  <input type="radio" name="gender" value ="Transgender">
+  <span class="checkmark"></span>
+</label>
+  <h2>Have you ever been known by other names (aliases)?:</h1>
+<label class="container">Yes
+  <input type="radio" checked="checked" name="other_name" value="Yes">
+  <span class="checkmark"></span>
+</label>
+<label class="container">No
+  <input type="radio" name="other_name" value="No">
+  <span class="checkmark"></span>
+</label>
+ <h2>Have you ever changed your name?</h1>
+<label class="container">Yes
+  <input type="radio" checked="checked" name="changed_name" value="Yes">
+  <span class="checkmark"></span>
+</label>
+<label class="container">No
+  <input type="radio" name="changed_name" value="No">
+  <span class="checkmark"></span>
+</label>
+<h2>Is your Place of Birth out of India?*:</h1>
+<label class="container">Yes
+  <input type="radio" checked="checked" name="rad" value="yes">
+  <span class="checkmark"></span>
+</label>
+<label class="container">No
+  <input type="radio" name="rad" value="No">
+  <span class="checkmark"></span>
+</label>
+<div class="input-container">
+    <i class="fa fa-home" style="font-size:48px;color:blue"></i>
+    <input class="input-field" type="text" placeholder="Place of Birth (Village/Town/City)" name="POB">
+  </div>
+  <div class="input-container">
+    <i class="fa fa-home" style="font-size:48px;color:blue"></i>
+    <input class="input-field" type="text" placeholder="State" name="state">
+  </div>
+  <div class="input-container">
+    <i class="fa fa-clone" style="font-size:48px;color:blue"></i>
+    <input class="input-field" type="text" placeholder="PAN(if available)" name="PAN">
+  </div>
+  <div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" type="text" placeholder="Voter Id(IF AVAILABLE) " name="VID">
+  </div>
+  
+  <div class="input-container" style="width:1000px;" >
+  <select name="maritalstat">
+    <option value="0">Marital Status</option>
+    <option value="widow/widower">Widow/Widower</option>
+    <option value="Married">Married</option>
+    <option value="Divarced">Divorced</option>
+    <option value="Seperated">Separated</option>
+    <option value="Single">Single</option>
+   
+  </select>
+</div>
+
+<br>
+ <div class="input-container" style="width:200px;" >
+  <select name="emptype">
+    <option value="0">Employment Type</option>
+    <option value="Government">Government</option>
+    <option value="PSU">PSU</option>
+    <option value="Statuory_body">Statuory Body</option>
+    <option value="Private">Private</option>
+    <option value="Retired_govt_servant">Retired Government Servant</option>
+   
+  </select>
+</div> 
+  <br>
+  
+  <div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" type="text" placeholder="If employed in Government/Statutory Body/PSU, specify organisation name" name="ifgovt">
+  </div>
+  <div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" type="text" placeholder="Visible distinguishing Mark " name="gvdm">
+  </div>
+   <div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" type="text" placeholder="Aadhar Number(IF AVAILABLE)" name="adhar">
+  </div>
+  
+  
+  
+  
+   <!-- <div class="custom-select" style="width:200px;" >
+  <select name="state">
+    <option value="0">Select State:</option>
+    <option value="1">Uttar Pradesh</option>
+    <option value="2">Bihar</option>
+    <option value="3">Chandigarh</option>
+    <option value="4">Maharashtra</option>
+    <option value="5">Kerala</option>
+    <option value="6">Jharkhand	</option>
+    <option value="7">Himachal Pradesh</option>
+    <option value="8">Utrakhand</option>
+    <option value="9">Tamil Nadu</option>
+    <option value="10">Telangana</option>
+    <option value="11">Madhya Pradesh</option>
+    <option value="12">Gujrat</option>
+  </select>
+</div>
+<br>
+<div class="custom-select" style="width:200px;" name="city">
+  <select name="city">
+    <option value="0">Select City</option>
+    <option value="1">Allahabad</option>
+    <option value="2">Delhi</option>
+    <option value="3">Lucknow</option>
+    <option value="4">Gorakhpur</option>
+    <option value="5">Mumbai</option>
+    <option value="6">Andman & Nicobar	</option>
+    <option value="7">Goa</option>
+    <option value="8">Varanasi</option>
+    <option value="9">Ahemdabad</option>
+    <option value="10">Bangelaru</option>
+    <option value="11">Kolkata</option>
+    <option value="12">Pune</option>
+  </select>
+</div>
+
+
+<!-- <div class="input-container">
+  <input type="file" name="pic" />
+</div> -->
+
+
+
+
+
+
+ <br> 
+
+<!-- <script>
+var x, i, j, selElmnt, a, b, c;
+/*look for any elements with the class "custom-select":*/
+x = document.getElementsByClassName("custom-select");
+for (i = 0; i < x.length; i++) {
+  selElmnt = x[i].getElementsByTagName("select")[0];
+  /*for each element, create a new DIV that will act as the selected item:*/
+  a = document.createElement("DIV");
+  a.setAttribute("class", "select-selected");
+  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  x[i].appendChild(a);
+  /*for each element, create a new DIV that will contain the option list:*/
+  b = document.createElement("DIV");
+  b.setAttribute("class", "select-items select-hide");
+  for (j = 0; j < selElmnt.length; j++) {
+    /*for each option in the original select element,
+    create a new DIV that will act as an option item:*/
+    c = document.createElement("DIV");
+    c.innerHTML = selElmnt.options[j].innerHTML;
+    c.addEventListener("click", function(e) {
+        /*when an item is clicked, update the original select box,
+        and the selected item:*/
+        var y, i, k, s, h;
+        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+        h = this.parentNode.previousSibling;
+        for (i = 0; i < s.length; i++) {
+          if (s.options[i].innerHTML == this.innerHTML) {
+            s.selectedIndex = i;
+            h.innerHTML = this.innerHTML;
+            y = this.parentNode.getElementsByClassName("same-as-selected");
+            for (k = 0; k < y.length; k++) {
+              y[k].removeAttribute("class");
+            }
+            this.setAttribute("class", "same-as-selected");
+            break;
+          }
+        }
+        h.click();
+    });
+    b.appendChild(c);
+  }
+  x[i].appendChild(b);
+  a.addEventListener("click", function(e) {
+      /*when the select box is clicked, close any other select boxes,
+      and open/close the current select box:*/
+      e.stopPropagation();
+      closeAllSelect(this);
+      this.nextSibling.classList.toggle("select-hide");
+      this.classList.toggle("select-arrow-active");
+    });
+}
+function closeAllSelect(elmnt) {
+  /*a function that will close all select boxes in the document,
+  except the current select box:*/
+  var x, y, i, arrNo = [];
+  x = document.getElementsByClassName("select-items");
+  y = document.getElementsByClassName("select-selected");
+  for (i = 0; i < y.length; i++) {
+    if (elmnt == y[i]) {
+      arrNo.push(i)
+    } else {
+      y[i].classList.remove("select-arrow-active");
+    }
+  }
+  for (i = 0; i < x.length; i++) {
+    if (arrNo.indexOf(i)) {
+      x[i].classList.add("select-hide");
+    }
+  }
+}
+/*if the user clicks anywhere outside the select box,
+then close all select boxes:*/
+document.addEventListener("click", closeAllSelect);</script> -->
+
+
+  
+  
+  
+  DoB
+   <input type="date" name="bday">
+  <br>
+  
+  
+  
+  <br>
+  <div class="input-container">
+    <i class="fa fa-phone icon"></i>
+    <input class="input-field" type="number" placeholder="phone" name="phone">
+  </div>
+
+  <!-- <div class="input-container">
+      <input type="file" name="pic" />
+    </div>
+   -->
+  
+  
+  
+  <button type="submit" class="btn">Register</button>
+  
+</form>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

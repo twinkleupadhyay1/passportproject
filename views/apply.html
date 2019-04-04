@@ -1,0 +1,397 @@
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<html>
+<div class="w3-container">
+<div class="w3-light-grey">
+  <div class="w3-black" style="height:24px;width:100%"><p id="demo"></p>
+
+<script>
+var d = new Date();
+document.getElementById("demo").innerHTML = d;
+</script></div>
+</div></div>
+</body>
+
+
+<div align="center">
+  <% if(currentUser) { %>
+    <p>hello, <%= currentUser.First_Name %></p>
+  <% } %>
+  </div>
+
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.header img {
+  float: left;
+  width: 100px;
+  height: 120px;
+  background: #555;
+}
+
+.header h2 {
+  position: relative;
+  top: 0px;
+  left: 10px;
+}
+.header p {
+position: relative;
+top: 0px;
+left: 10px;
+}
+
+
+
+
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #2bbc71;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+h3 {
+    border-bottom: blue;
+background-color: darkslateblue;
+color: white;
+}
+
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #2bbc71;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #d3903d;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+
+<body>
+
+
+
+<div class="header">
+  <br><img src="/static/image/ashokpillar.jpg" alt="logo"  width="50" height="290"/>
+<img src="/static/image/india.jpg" alt="logo" style="float:right;" width="50" height="290"/>
+ <h2><big><b>Passport Seva</b></big></h2>
+<p><small>Consular,Passport & Visa Division<br>Ministry of External Affairs,Government of India</small></p><br>
+
+</div>
+
+
+
+
+
+
+
+<!-- <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #2bbc71;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+h3 {
+    border-bottom: blue;
+background-color: darkslateblue;
+color: white;
+}
+
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #2bbc71;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #d3903d;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+</head> 
+</style>-->
+
+
+<div class="topnav">
+  <a class href="applicanthome.html">Applicant Home</a>
+<div class="dropdown">
+    <button class="dropbtn">About Us
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="cpv.html">CPV Division</a>
+      <a href="passportseva.html">Passport Seva</a>
+      
+    </div>
+  </div> 
+
+
+
+<div class="dropdown">
+    <button class="dropbtn">Passport Offices
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="p2.html">Passport Offices in India</a>
+      <a href="p4.html">Mission/Post Abroad</a>
+      
+    </div>
+  </div> 
+
+
+<div class="dropdown">
+    <button class="dropbtn">Consular Services
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="fnandres.html">Functions and Responsibilities</a>
+      <a href="grievances.html">Log and Track Grievances</a>
+      
+    </div>
+  </div>
+
+
+  <a href="visa.html">Visa Services</a>
+
+  
+<a href="RTI.html">RTI</a>
+
+
+<a href="citizencharter.html">Citizens' Chater</a>
+
+<div class="dropdown">
+    <button class="dropbtn">Contact Us
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+
+      <a href="gi.html"> General Information</a>
+<a href="chiefpassportoffice.html"> Chief Passport Officer</a>
+
+<a href="vigilanceunit.html"> Vigilance Unit</a>
+<a href="visaservice.html">Visa Services</a>
+      <a href="consularservice.html">Consular Services</a>
+    </div>
+  </div> 
+
+
+
+<a href="What'snew.html">What's New</a>
+
+<a href="/app/logout" class="f90-logout-button">Logout</a>
+
+
+</div>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+
+<body> -->
+<marquee bgcolor=orange> POPSKs have been made operational in the Country.** New Tatkaal Scheme Launched. For details please refer The Gazette of India - G.S.R. 39(E) under <b>Latest  News </b>section on the portal.** No applicants would be serviced at PSK/POPSK without prior online appointment.** Please refer 'Passport Office Page' for more details.</marquee>
+
+
+
+<body style="background:url(/static/image/gradient.jpg)";style="background size:100% 100%" ;style="background-repeat: no repeat">
+
+
+
+
+   <h2 style="color:darkslateblue";style="font-size:300%";style="text-align:center;">Apply for Fresh Passport/Re-issue of Passport</h2>
+
+
+
+
+
+
+<p>You can apply for a fresh passport or Re-issue of a passport using two alternatives:</p>
+
+<h3>
+
+Alternative 1
+
+</h3>
+<p>
+You can fill the application form online (internet connection is required to fill the form online). 
+<a href="/app/applicantdetail" >Click here to fill the application form online</a></p><br><br>
+<h3>
+
+Alternative 2
+
+</h3>
+
+<p>
+<ol><li>
+You can download the soft copy of the form.<font color="red"><a href="apply.html" >Click here to download the soft copy</a></font> </li><br>
+<li>Fill it offline (internet connection is not required to fill the form offline)</li><br>
+<li>Upload the filled form. <font color="red"><a href="apply.html" >Click here to upload the filled form</a></font></li><br><hr>
+<b>Note:	While applying under Fresh Issuance category - please make sure you never held a Passport of the applied category (i.e. Ordinary Passport, Diplomatic Passport or Official Passport) in the past.</b><br><br>
+
+For instance, if you ever held an Ordinary passport (Deep Blue colour) in the past but never held any Diplomatic (maroon colour) or Official (white colour) passport - you need to apply under Reissue category if applying for an Ordinary Passport while choose the Fresh category if applying for a Diplomatic or Official passport. Similarly, if you have/held a Diplomatic (or Official) Passport but do not have/held an Ordinary Passport - you need to apply for Ordinary Passport under Fresh category while choose the Reissue category if applying for Diplomatic (or Official) passport.</p>
