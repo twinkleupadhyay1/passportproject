@@ -361,21 +361,96 @@ color: white;
 
 
 
+    <div id="resolve"></div>
 
-   <h2 style="color:darkslateblue";style="font-size:300%";style="text-align:center;">Admin Home</h2>
+   <h2 style="color:darkslateblue";style="font-size:300%";style="text-align:center;">Write your querry here</h2>
 
-<ul>
+   <div align="center">
+    <textarea id="name" rows="5" cols="50">
+    
+     </textarea> 
+  
+ <br>
+ <br>
+ 
+ 
+ <br>
+     <button type="button" id="queryres" value="Submit">Submit</button>
+   </div>
+
+
+
+   <table>
+        <% var j=1 %>
+        <% for(i in queryres) { %>
+
+           
+           
+            <tr>
+             <td>question-<%= j%> <%= queryres[i].queryresolve %><br></td>
+             <%  j=j+1 %>
+            </tr>
+          <% } %>
+
+
+          <% var j=1 %>  
+
+    <% for(i in queryans) { %>
+   <tr>
+    <td> solution- <%= j%> <%= queryans[i].queryans %><br></td>
+    <%  j=j+1 %>
+   </tr>
+ <% } %>
+
+  </table>
+
+
+
+
+   <script src="/static/scripts/lib/jquery-1.12.0.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $('#queryres').click(function(){
+      var value = $("#name").val();
+      var box = document.createElement("div");
+      box.textContent = value;
+        document.getElementById("resolve").appendChild(box);
+        $('#name').val("");
+
+      var ajax = new XMLHttpRequest();
+      ajax.onreadystatechange = function(){
+        if(this.status == 200 && this.readyState == 4){
+          // console.log('data pulished');
+        }
+      }
+      // console.log(value);
+
+      ajax.open("POST","/app/queryres",true);
+      ajax.send(value)
+
+    });
+  });
+
+
+
+
+  </script>
+
+
+
+
+
+<!-- <ul>
 <li>
 <a href="/app/applicationapprove" >Approve Passport Applications</a></li>
 
 
  <li><a href="/app/noticeandupdate" >Notices and updates </a></li>
  <li><a href="/app/modificationapprove" >Approve modification applications</a></li>
- <li><a href="/app/queryanswer" >Apllicant's querries</a></li>
 
-<!-- <li><a href="apply.html" >Resolve your queries</a></li>
-<li><a href="apply.html" >Check your passport status</a></li>  -->
-</ul>
+<li><a href="apply.html" >Resolve your queries</a></li>
+<li><a href="apply.html" >Check your passport status</a></li> 
+</ul> -->
 
 
 </body>

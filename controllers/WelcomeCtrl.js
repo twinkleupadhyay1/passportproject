@@ -4,6 +4,77 @@ var databaseUtils=require('./../utils/databaseUtils');
 
 module.exports = {
 
+    answerquery : function*(next)
+    {
+        var data = this.request.body;
+        console.log('body',data);
+        var res  = yield databaseUtils.executeQuery(util.format('insert into queryanswer(queryans) values("%s")',data));
+        console.log("sdfjhrgkjtehirof")
+        this.status = 200;
+    },
+
+   
+
+
+
+    resolvequery : function*(next)
+    {
+        var data = this.request.body;
+        console.log('body',data);
+        var res  = yield databaseUtils.executeQuery(util.format('insert into queryresolve(queryresolve) values("%s")',data));
+        console.log("sdfjhrgkjtehirof")
+        this.status = 200;
+    },
+
+    queryresolve: function* (next) {
+        if(this.currentUser){
+            var data= yield databaseUtils.executeQuery(util.format('select * from queryanswer'));
+            var data1=yield databaseUtils.executeQuery(util.format('select * from queryresolve'));
+            yield this.render('queryresolve',{
+                queryans:data,
+                queryres:data1
+                
+
+            });
+        } else{
+           yield this.render('homepage');
+        }
+    },
+
+
+
+    queryanswer: function* (next) {
+        if(this.currentUser){
+            var data= yield databaseUtils.executeQuery(util.format('select * from queryresolve'));
+            yield this.render('queryanswer',{
+                queryres:data
+            });
+        } else{
+           yield this.render('homepage');
+        }
+    },
+
+
+
+    // whatsnewpage: function* (next) {
+
+    //     var data = yield databaseUtils.executeQuery(util.format('select * from notice'));
+
+
+    //     yield this.render('whatsnew',{
+    //         notice:data
+    //     });
+    // },
+
+
+
+
+
+
+
+
+    
+
     update_notice : function*(next)
     {
         var data = this.request.body;
@@ -62,6 +133,7 @@ module.exports = {
            yield this.render('homepage');
         }
     },
+    
 
     applicationapprovepage1: function* (next) {
         if(this.currentUser){

@@ -28,6 +28,13 @@ module.exports = function(app){
     router.post('/signup', welcomeCtrl.Signuppage2);
     router.get("/logout",welcomeCtrl.logout);
 
+    router.get("/queryresolve",welcomeCtrl.queryresolve);
+    router.post("/queryres",welcomeCtrl.resolvequery);
+
+
+    router.get("/queryanswer",welcomeCtrl.queryanswer);
+    router.post("/queryans",welcomeCtrl.answerquery);
+
     router.get("/applicantdetail",welcomeCtrl.applicantdetailPage);
     router.post("/applicantdetail",welcomeCtrl.applicantdetailPage1);
 
